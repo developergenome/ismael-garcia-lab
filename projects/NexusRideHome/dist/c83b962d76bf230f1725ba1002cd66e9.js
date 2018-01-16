@@ -132,7 +132,7 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":5}],6:[function(require,module,exports) {
+},{"./bundle-url":5}],3:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -142,7 +142,7 @@ module.exports = reloadCSS;
 "use strict";
 
 require("../css/app.sass");
-},{"../css/app.sass":6}],0:[function(require,module,exports) {
+},{"../css/app.sass":3}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -160,7 +160,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':62356/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':64456/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
