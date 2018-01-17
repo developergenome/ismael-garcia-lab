@@ -138,7 +138,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":6}],4:[function(require,module,exports) {
+},{"./..\\img\\herobg.jpeg":["b7a6ed50c210d83ac864aa7c3a7e57d3.jpeg",9],"_css_loader":6}],4:[function(require,module,exports) {
 "use strict";
 
 require("../css/app.scss");
