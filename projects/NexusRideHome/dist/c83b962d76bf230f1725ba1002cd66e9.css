@@ -48,10 +48,19 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-basis: 3;
-    margin-left: 20px; }
+    margin-left: 20px;
+    min-height: 65px; }
     header .menu_item {
-      margin: auto 10px; }
+      margin: auto 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 65px;
+      padding: 0 10px;
+      transition: all 0.5s ease-in-out; }
+      header .menu_item:hover {
+        box-shadow: 0 5px 0 #285328 inset;
+        background: #f8f8f9; }
 
 .toggle {
   margin-left: 20px;
@@ -76,9 +85,9 @@ header {
 
 @keyframes line_1--rev {
   0% {
-    transform: translate3d(0, 0.8rem, 0) rotate(225deg); }
+    transform: translate3d(0, 0.6rem, 0) rotate(225deg); }
   50% {
-    transform: translate3d(0, 0.8rem, 0) rotate(0); }
+    transform: translate3d(0, 0.6rem, 0) rotate(0); }
   100% {
     transform: translate3d(0, 0, 0) rotate(0); } }
   .toggle .line_2 {
@@ -97,9 +106,9 @@ header {
 
 @keyframes line_3--rev {
   0% {
-    transform: translate3d(0, 0.8rem, 0) rotate(-220deg); }
+    transform: translate3d(0, -0.7rem, 0) rotate(-220deg); }
   50% {
-    transform: translate3d(0, -0.8rem, 0) rotate(0); }
+    transform: translate3d(0, -0.7rem, 0) rotate(0); }
   100% {
     transform: translate3d(0, 0, 0) rotate(0); } }
   .toggle:hover .line_1,
@@ -113,9 +122,9 @@ header {
   0% {
     transform: translate3d(0, 0, 0) rotate(0); }
   50% {
-    transform: translate3d(0, 0.4rem, 0) rotate(0deg); }
+    transform: translate3d(0, 0.8rem, 0) rotate(0deg); }
   100% {
-    transform: translate3d(0, 1rem, 0) rotate(225deg); } }
+    transform: translate3d(0, 0.8rem, 0) rotate(225deg); } }
   .toggle.active .line_2 {
     animation: line-2 0.6s ease-in-out forwards; }
 
@@ -133,9 +142,9 @@ header {
   0% {
     transform: translate3d(0, 0, 0) rotate(0); }
   50% {
-    transform: translate3d(0, -1rem, 0) rotate(0); }
+    transform: translate3d(0, -0.8rem, 0) rotate(0); }
   100% {
-    transform: translate3d(0, -0.4rem, 0) rotate(-225deg); } }
+    transform: translate3d(0, -0.7rem, 0) rotate(-225deg); } }
 
 .btn {
   background: #377037;
