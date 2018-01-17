@@ -1,4 +1,5 @@
 $body-bg: #eee;
+$form-bg: #f8f8f9;
 $white: #fff;
 $btn-bg: #377037;
 $btn-hover-color: #285328;
@@ -242,6 +243,24 @@ header {
         height: 500px;
         background: url('../img/herobg.jpeg') no-repeat center ;
         background-size: cover;
+        position: relative;
     }
 
 }
+/*======= FORM CONTAINER =========*/ 
+/*======= FORM CONTAINER =========*/
+.form-container{
+    width: 400px;
+    height: 800px;
+    background:$form-bg ;
+    padding: 2rem;
+    position: absolute;
+    top:-12rem;
+    right: 7rem;
+    bottom: 2.5rem;
+} 
+/*======= END FORM CONTAINER =========*/ 
+/*======= END FORM CONTAINER =========*/ 
+/*======= FORM CONTAINER =========*/ 
+/*======= FORM CONTAINER =========*/ 
+/*======= FORM CONTAINER =========*/ 
