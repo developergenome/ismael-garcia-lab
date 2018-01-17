@@ -17,6 +17,9 @@ a {
   a:hover {
     color: #377037; }
 
+.no-margin {
+  margin: 0; }
+
 /*======== MAIN WRAPPER STYLES==========*/
 .main-wrapper {
   background: #fff;
@@ -196,9 +199,70 @@ header {
   top: -12rem;
   right: 7rem;
   bottom: 2.5rem; }
+  .form-container .form_header {
+    margin-bottom: 20px; }
+    .form-container .form_header .form_header--title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .form-container .form_header .form_header--title .form_title--img {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        background: #377037; }
+      .form-container .form_header .form_header--title a.btn-form {
+        font-weight: 700;
+        color: #377037; }
+        .form-container .form_header .form_header--title a.btn-form .fa {
+          transition: all 0.3s ease-in-out; }
+        .form-container .form_header .form_header--title a.btn-form:hover .fa {
+          transform: translateX(10px); }
+      .form-container .form_header .form_header--title h4 {
+        line-height: 150%;
+        font-size: 1.3rem;
+        font-weight: 400; }
+    .form-container .form_header .form_title--line {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 1rem; }
+      .form-container .form_header .form_title--line hr {
+        width: 45%;
+        height: 0;
+        border-top: 1px solid #717171; }
+      .form-container .form_header .form_title--line span {
+        color: #717171;
+        text-transform: uppercase; }
 
-/*======= END FORM CONTAINER =========*/
-/*======= END FORM CONTAINER =========*/
+/*======= form_input--container=========*/
+.form_input--container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+  position: relative; }
+  .form_input--container.no-margin {
+    margin: 0; }
+  .form_input--container input {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    border: 1px solid #E5E5E4;
+    padding: 10px;
+    transition: all 0.3s ease-in-out; }
+    .form_input--container input:not([type='submit']) {
+      background: #fff; }
+  .form_input--container .fa {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%); }
+
+/*======= form_input--container=========*/
 /*======= FORM CONTAINER =========*/
 /*======= FORM CONTAINER =========*/
 /*======= FORM CONTAINER =========*/

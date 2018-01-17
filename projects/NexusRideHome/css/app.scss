@@ -4,6 +4,7 @@ $white: #fff;
 $btn-bg: #377037;
 $btn-hover-color: #285328;
 $general-color: #333;
+$light-dark: #717171;
 $main-font: 'Source Sans Pro', sans-serif;;
 
 /* GENERAL CSS */
@@ -30,7 +31,9 @@ a {
     }
 }
 
-
+.no-margin{
+    margin: 0;
+}
 /*======== MAIN WRAPPER STYLES==========*/
 
 .main-wrapper {
@@ -258,9 +261,85 @@ header {
     top:-12rem;
     right: 7rem;
     bottom: 2.5rem;
+    // background:$white;
+    .form_header{
+        margin-bottom: 20px;
+        .form_header--title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .form_title--img{
+                width: 60px;
+                height: 60px;
+                margin-right: 20px;
+                background: $btn-bg;
+            }
+            a.btn-form{
+                font-weight: 700;
+                color:$btn-bg;
+                .fa{
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover .fa{
+                    transform: translateX(10px);
+                }
+            }
+            h4{
+                line-height: 150%;
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+        }
+        .form_title--line{
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 1rem;
+            hr{
+                width: 45%;
+                height: 0;
+                border-top: 1px solid $light-dark;
+            }
+            span{
+                color:$light-dark;
+                text-transform: uppercase;
+            }
+        }
+    }
 } 
-/*======= END FORM CONTAINER =========*/ 
-/*======= END FORM CONTAINER =========*/ 
+/*======= form_input--container=========*/ 
+.form_input--container{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    position: relative;
+    &.no-margin{
+        margin: 0;
+    }
+    input{
+        font-family: $main-font;
+        font-size: 1.5rem;
+        font-weight: 300;
+        display: block;
+        width: 100%;
+        border: 1px solid #E5E5E4;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+        &:not([type='submit']){
+            background: #fff;
+        }
+    }
+    .fa{
+        position: absolute;
+        color: $white;
+        top:50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+}
+/*======= form_input--container=========*/ 
 /*======= FORM CONTAINER =========*/ 
 /*======= FORM CONTAINER =========*/ 
 /*======= FORM CONTAINER =========*/ 
