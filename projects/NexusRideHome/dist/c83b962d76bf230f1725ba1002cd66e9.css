@@ -192,15 +192,15 @@ header {
 /*======= FORM CONTAINER =========*/
 .form-container {
   width: 400px;
-  height: 800px;
+  max-height: 800px;
   background: #f8f8f9;
   padding: 2rem;
   position: absolute;
-  top: -12rem;
+  top: -10rem;
   right: 7rem;
-  bottom: 2.5rem; }
+  bottom: -6rem; }
   .form-container .form_header {
-    margin-bottom: 20px; }
+    margin-bottom: 2rem; }
     .form-container .form_header .form_header--title {
       display: flex;
       justify-content: flex-start;
@@ -209,7 +209,8 @@ header {
         width: 60px;
         height: 60px;
         margin-right: 20px;
-        background: #377037; }
+        background: #377037;
+        border-radius: 50%; }
       .form-container .form_header .form_header--title a.btn-form {
         font-weight: 700;
         color: #377037; }
@@ -235,6 +236,12 @@ header {
       .form-container .form_header .form_title--line span {
         color: #717171;
         text-transform: uppercase; }
+  .form-container .form p {
+    color: #717171;
+    font-size: 0.8rem; }
+    .form-container .form p a {
+      color: #377037;
+      font-size: 1rem; }
 
 /*======= form_input--container=========*/
 .form_input--container {

@@ -254,16 +254,16 @@ header {
 /*======= FORM CONTAINER =========*/
 .form-container{
     width: 400px;
-    height: 800px;
+    max-height: 800px;
     background:$form-bg ;
     padding: 2rem;
     position: absolute;
-    top:-12rem;
+    top:-10rem;
     right: 7rem;
-    bottom: 2.5rem;
+    bottom: -6rem;
     // background:$white;
     .form_header{
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
         .form_header--title{
             display: flex;
             justify-content: flex-start;
@@ -273,6 +273,7 @@ header {
                 height: 60px;
                 margin-right: 20px;
                 background: $btn-bg;
+                border-radius: 50%;
             }
             a.btn-form{
                 font-weight: 700;
@@ -306,6 +307,14 @@ header {
                 color:$light-dark;
                 text-transform: uppercase;
             }
+        }
+    }
+    .form p{
+        color:$light-dark;
+        font-size: 0.8rem;
+        a{
+            color:$btn-bg;
+            font-size: 1rem;
         }
     }
 } 
