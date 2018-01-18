@@ -5,7 +5,9 @@ $btn-bg: #377037;
 $btn-hover-color: #285328;
 $general-color: #333;
 $light-dark: #717171;
-$main-font: 'Source Sans Pro', sans-serif;;
+$main-font: 'Source Sans Pro',
+sans-serif;
+;
 
 /* GENERAL CSS */
 
@@ -17,7 +19,7 @@ $main-font: 'Source Sans Pro', sans-serif;;
 
 html,
 body {
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     background: $body-bg;
 }
@@ -31,9 +33,15 @@ a {
     }
 }
 
-.no-margin{
+.fa {
+    transition: all 0.5s ease-in-out;
+}
+
+.no-margin {
     margin: 0;
 }
+
+
 /*======== MAIN WRAPPER STYLES==========*/
 
 .main-wrapper {
@@ -210,6 +218,7 @@ header {
     text-transform: uppercase;
     padding: 0.8rem;
     font-size: 0.7rem;
+    display: inline-block;
     &:hover {
         color: $white;
         background: $btn-hover-color;
@@ -217,7 +226,7 @@ header {
 }
 
 // Section one styles
-.section_hero{
+.section_hero {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -226,108 +235,114 @@ header {
     .hero_title {
         max-width: 1270px;
         width: 100%;
-        margin:  0 auto;
-        h1{
+        margin: 0 auto;
+        h1 {
             padding: 3rem 6rem;
             font-family: $main-font;
             font-weight: 200;
             font-size: 3rem;
             line-height: 150%;
             letter-spacing: -1.3px;
-            span{
+            span {
                 font-weight: 400;
             }
         }
-    }
-    // Hero img 
-    .hero_img{
+    } // Hero img 
+    .hero_img {
         margin-top: 24px;
         width: 100%;
         height: 500px;
-        background: url('../img/herobg.jpeg') no-repeat center ;
+        background: url('../img/herobg.jpeg') no-repeat center;
         background-size: cover;
         position: relative;
     }
-
 }
-/*======= FORM CONTAINER =========*/ 
+
+
 /*======= FORM CONTAINER =========*/
-.form-container{
+
+
+/*======= FORM CONTAINER =========*/
+
+.form-container {
     width: 400px;
     max-height: 800px;
-    background:$form-bg ;
+    background: $form-bg;
     padding: 2rem;
     position: absolute;
-    top:-10rem;
+    top: -10rem;
     right: 7rem;
-    bottom: -6rem;
-    // background:$white;
-    .form_header{
+    bottom: -6rem; // background:$white;
+    .form_header {
         margin-bottom: 2rem;
-        .form_header--title{
+        .form_header--title {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            .form_title--img{
+            .form_title--img {
                 width: 60px;
                 height: 60px;
                 margin-right: 20px;
                 background: $btn-bg;
                 border-radius: 50%;
             }
-            a.btn-form{
+            a.btn-form {
                 font-weight: 700;
-                color:$btn-bg;
-                .fa{
+                color: $btn-bg;
+                .fa {
                     transition: all 0.3s ease-in-out;
                 }
-                &:hover .fa{
+                &:hover .fa {
                     transform: translateX(10px);
                 }
             }
-            h4{
+            h4 {
                 line-height: 150%;
                 font-size: 1.3rem;
                 font-weight: 400;
             }
         }
-        .form_title--line{
+        .form_title--line {
             margin: 10px 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
             font-size: 1rem;
-            hr{
+            hr {
                 width: 45%;
                 height: 0;
                 border-top: 1px solid $light-dark;
             }
-            span{
-                color:$light-dark;
+            span {
+                color: $light-dark;
                 text-transform: uppercase;
             }
         }
     }
-    .form p{
-        color:$light-dark;
-        font-size: 0.8rem;
-        a{
-            color:$btn-bg;
-            font-size: 1rem;
+    .form p {
+        color: $light-dark;
+        font-size: 0.9rem;
+        margin-top: 0.6rem;
+        a {
+            color: $btn-bg;
+            font-size: 0.89rem;
         }
     }
-} 
-/*======= form_input--container=========*/ 
-.form_input--container{
+}
+
+
+/*======= form_input--container=========*/
+
+.form_input--container {
     width: 100%;
     display: flex;
     margin-bottom: 1rem;
     position: relative;
-    &.no-margin{
+    &.no-margin {
         margin: 0;
     }
-    input{
+    input {
         font-family: $main-font;
         font-size: 1.3rem;
         font-weight: 300;
@@ -336,19 +351,72 @@ header {
         border: 1px solid #E5E5E4;
         padding: 10px;
         transition: all 0.3s ease-in-out;
-        &:not([type='submit']){
+        &:not([type='submit']) {
             background: #fff;
-        }
-    }
-    .fa{
-        position: absolute;
-        color: $white;
-        top:50%;
-        right: 20px;
-        transform: translateY(-50%);
+        } // &[type='submit']:hover + .fa {
+        // right: 20px;
+        // }
     }
 }
-/*======= form_input--container=========*/ 
-/*======= FORM CONTAINER =========*/ 
-/*======= FORM CONTAINER =========*/ 
-/*======= FORM CONTAINER =========*/ 
+
+.btn-submit:hover+.fa {
+    right: 20px;
+}
+
+.btn-submit+.fa {
+    position: absolute;
+    color: $white;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+
+/*======= form_input--container=========*/
+
+
+/*======= section 2 =========*/
+
+.section_2 {
+    margin: 7rem auto 0;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+    max-width: 1094px;
+    font-family: $main-font;
+    .section_2--card {
+        font-size: 1.1rem;
+        line-height: 150%;
+        font-weight: 500;
+        color: $light-dark;
+        .card_img {
+            width: 40%;
+            height: 100px;
+            background: $btn-bg;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+        }
+        .card_title {
+            font-size: 2rem;
+            font-weight: 300;
+            color: $general-color;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .btn_container {
+        position: relative;
+        .btn {
+            width: 100%;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+    }
+}
+
+
+/*======= section 2 =========*/
+
+
+/*======= section 2 =========*/

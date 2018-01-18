@@ -17,6 +17,9 @@ a {
   a:hover {
     color: #377037; }
 
+.fa {
+  transition: all 0.5s ease-in-out; }
+
 .no-margin {
   margin: 0; }
 
@@ -156,7 +159,8 @@ header {
   color: #fff;
   text-transform: uppercase;
   padding: 0.8rem;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  display: inline-block; }
   .btn:hover {
     color: #fff;
     background: #285328; }
@@ -238,10 +242,11 @@ header {
         text-transform: uppercase; }
   .form-container .form p {
     color: #717171;
-    font-size: 0.8rem; }
+    font-size: 0.9rem;
+    margin-top: 0.6rem; }
     .form-container .form p a {
       color: #377037;
-      font-size: 1rem; }
+      font-size: 0.89rem; }
 
 /*======= form_input--container=========*/
 .form_input--container {
@@ -262,14 +267,50 @@ header {
     transition: all 0.3s ease-in-out; }
     .form_input--container input:not([type='submit']) {
       background: #fff; }
-  .form_input--container .fa {
-    position: absolute;
-    color: #fff;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%); }
+
+.btn-submit:hover + .fa {
+  right: 20px; }
+
+.btn-submit + .fa {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%); }
 
 /*======= form_input--container=========*/
-/*======= FORM CONTAINER =========*/
-/*======= FORM CONTAINER =========*/
-/*======= FORM CONTAINER =========*/
+/*======= section 2 =========*/
+.section_2 {
+  margin: 7rem auto 0;
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  max-width: 1094px;
+  font-family: "Source Sans Pro", sans-serif; }
+  .section_2 .section_2--card {
+    font-size: 1.1rem;
+    line-height: 150%;
+    font-weight: 500;
+    color: #717171; }
+    .section_2 .section_2--card .card_img {
+      width: 40%;
+      height: 100px;
+      background: #377037;
+      border-radius: 50%;
+      margin-bottom: 1.5rem; }
+    .section_2 .section_2--card .card_title {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #333;
+      margin-bottom: 1.5rem; }
+  .section_2 .btn_container {
+    position: relative; }
+    .section_2 .btn_container .btn {
+      width: 100%;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 300; }
+
+/*======= section 2 =========*/
+/*======= section 2 =========*/
