@@ -294,11 +294,14 @@ header {
     font-weight: 500;
     color: #717171; }
     .section_2 .section_2--card .card_img {
-      width: 40%;
+      width: 100px;
       height: 100px;
       background: #377037;
       border-radius: 50%;
       margin-bottom: 1.5rem; }
+      .section_2 .section_2--card .card_img img {
+        width: 100%;
+        height: 100%; }
     .section_2 .section_2--card .card_title {
       font-size: 2rem;
       font-weight: 300;
