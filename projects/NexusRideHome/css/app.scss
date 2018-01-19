@@ -40,10 +40,12 @@ a {
 .no-margin {
     margin: 0;
 }
-.container{
+
+.container {
     max-width: 1094px;
     margin: 0 auto;
 }
+
 
 /*======== MAIN WRAPPER STYLES==========*/
 
@@ -268,8 +270,7 @@ header {
 /*======= FORM CONTAINER =========*/
 
 .form-container {
-    width: 400px;
-    // max-height: 800px;
+    width: 400px; // max-height: 800px;
     background: $form-bg;
     padding: 2rem;
     position: absolute;
@@ -397,7 +398,7 @@ header {
             background: $btn-bg;
             border-radius: 50%;
             margin-bottom: 1.5rem;
-            img{
+            img {
                 width: 100%;
                 height: 100%;
             }
@@ -410,63 +411,86 @@ header {
         }
     }
 }
-        .btn_container {
-            position: relative;
-            .btn {
-                width: 100%;
-                text-align: center;
-                font-size: 1.1rem;
-                font-weight: 300;
-            }
-        }
+
+.btn_container {
+    position: relative;
+    .btn {
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+}
 
 
 /*======= section 3=========*/
-.card_subtitle{
-    font-weight:300;
-    font-size: 2rem;
-    margin-top:2rem;
-    padding: 1rem 0;
-}
-.card_title{
-    font-size: 2rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
-    color:$general-color;
-}
-.section_3{
+
+.section_3 {
     background: $form-bg;
-    .container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap:4rem;
-        padding:6rem 0 ;
-        color:$light-dark;
-        .section_3--card{
-            font-family:$main-font;
-            line-height:150%;
-            .card_img img{
-                width:100%;
-                height:100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    padding: 6rem 0;
+    color: $light-dark;
+    .card_subtitle {
+        font-weight: 300;
+        font-size: 2rem;
+        margin-top: 2rem;
+        padding: 1rem 0;
+    }
+    .card_title {
+        font-size: 2rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+        color: $general-color;
+    }
+    .card_body {
+        line-height: 160%;
+        margin-bottom: 2rem;
+        color: $general-color;
+    }
+    .section_3--card {
+        font-family: $main-font;
+        line-height: 150%;
+        .card_img img {
+            width: 100%;
+            height: 100%;
         }
-        .card_body{
-            line-height:160%;
-            margin-bottom: 2rem;
-            color:$general-color;
-        }
-        .btn_container{
-            max-width:13rem;
-            .btn-submit{
+        .btn_container {
+            max-width: 13rem;
+            .btn-submit {
                 text-align: left;
                 font-weight: normal;
-                color:$btn-bg;
-                background:inherit;
+                color: $btn-bg;
+                background: inherit;
             }
-            .fa{
-                color:$btn-bg;
+            .fa {
+                color: $btn-bg;
             }
         }
     }
 }
+
+
+/*======= section 4=========*/
+.section_4{
+    background:$white;
+    .container{
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: 1rem;
+    }
 }
-/*======= section 3 =========*/
+.form_container{
+    grid-area: 1/ span 2;
+    background: #000;
+}
+.map{
+    background:lightblue;
+    grid-area :1/span 4;
+    width:100%;
+    
+}
+/*======= section 4=========*/
