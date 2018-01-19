@@ -40,7 +40,10 @@ a {
 .no-margin {
     margin: 0;
 }
-
+.container{
+    max-width: 1094px;
+    margin: 0 auto;
+}
 
 /*======== MAIN WRAPPER STYLES==========*/
 
@@ -266,7 +269,7 @@ header {
 
 .form-container {
     width: 400px;
-    max-height: 800px;
+    // max-height: 800px;
     background: $form-bg;
     padding: 2rem;
     position: absolute;
@@ -353,9 +356,7 @@ header {
         transition: all 0.3s ease-in-out;
         &:not([type='submit']) {
             background: #fff;
-        } // &[type='submit']:hover + .fa {
-        // right: 20px;
-        // }
+        }
     }
 }
 
@@ -408,19 +409,35 @@ header {
             margin-bottom: 1.5rem;
         }
     }
-    .btn_container {
-        position: relative;
-        .btn {
-            width: 100%;
-            text-align: center;
-            font-size: 1.1rem;
-            font-weight: 300;
+}
+        .btn_container {
+            position: relative;
+            .btn {
+                width: 100%;
+                text-align: center;
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+        }
+
+
+/*======= section 3=========*/
+.section_3{
+    background: $form-bg;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:3rem;
+        padding:6rem 0 ;
+        .section_3--card{
+            .card_img img{
+                width:100%;
+                heigth:100%;
+        }
+        .card_subtitle{
+            
         }
     }
 }
-
-
-/*======= section 2 =========*/
-
-
-/*======= section 2 =========*/
+}
+/*======= section 3 =========*/

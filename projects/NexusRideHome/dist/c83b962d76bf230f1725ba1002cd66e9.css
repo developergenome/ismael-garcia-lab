@@ -23,6 +23,10 @@ a {
 .no-margin {
   margin: 0; }
 
+.container {
+  max-width: 1094px;
+  margin: 0 auto; }
+
 /*======== MAIN WRAPPER STYLES==========*/
 .main-wrapper {
   background: #fff;
@@ -196,7 +200,6 @@ header {
 /*======= FORM CONTAINER =========*/
 .form-container {
   width: 400px;
-  max-height: 800px;
   background: #f8f8f9;
   padding: 2rem;
   position: absolute;
@@ -307,13 +310,25 @@ header {
       font-weight: 300;
       color: #333;
       margin-bottom: 1.5rem; }
-  .section_2 .btn_container {
-    position: relative; }
-    .section_2 .btn_container .btn {
-      width: 100%;
-      text-align: center;
-      font-size: 1.1rem;
-      font-weight: 300; }
 
-/*======= section 2 =========*/
-/*======= section 2 =========*/
+.btn_container {
+  position: relative; }
+  .btn_container .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 300; }
+
+/*======= section 3=========*/
+.section_3 {
+  background: #f8f8f9; }
+  .section_3 .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    padding: 6rem 0; }
+    .section_3 .container .section_3--card .card_img img {
+      width: 100%;
+      heigth: 100%; }
+
+/*======= section 3 =========*/
