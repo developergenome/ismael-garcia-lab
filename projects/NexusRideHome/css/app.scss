@@ -343,7 +343,6 @@ header {
     display: flex;
     margin-bottom: 1rem;
     position: relative;
-    
     &.no-margin {
         margin: 0;
     }
@@ -361,7 +360,6 @@ header {
         }
     }
 }
-
 .btn-submit:hover+.fa {
     right: 20px;
 }
@@ -374,7 +372,9 @@ header {
     transform: translateY(-50%);
 }
 
-
+form > div:first-of-type > input {
+    max-width:50%;
+}
 /*======= form_input--container=========*/
 
 

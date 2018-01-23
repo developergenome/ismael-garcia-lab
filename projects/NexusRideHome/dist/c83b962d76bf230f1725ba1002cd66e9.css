@@ -281,6 +281,9 @@ header {
   right: 30px;
   transform: translateY(-50%); }
 
+form > div:first-of-type > input {
+  max-width: 50%; }
+
 /*======= form_input--container=========*/
 /*======= section 2 =========*/
 .section_2 {
