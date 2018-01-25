@@ -281,7 +281,7 @@ header {
   right: 30px;
   transform: translateY(-50%); }
 
-form > div:first-of-type > input {
+.form-container form > div:first-of-type > input {
   max-width: 50%; }
 
 /*======= form_input--container=========*/
@@ -364,14 +364,30 @@ form > div:first-of-type > input {
 
 /*======= section 4=========*/
 .section_4 {
-  background: #fff; }
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif; }
   .section_4 .container {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem; }
 
 .form_container {
-  grid-area: 1/ span 2;
-  background: #000; }
+  letter-spacing: -0.03rem;
+  grid-area: 1/ span 2; }
+  .form_container .form form {
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column; }
+    .form_container .form form .input_container {
+      position: relative;
+      display: flex;
+      width: 100%; }
+      .form_container .form form .input_container.fa {
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .form_container .form form .input_container input {
+        width: 100%;
+        padding: 10px; }
 
 .map {
   background: lightblue;

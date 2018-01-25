@@ -360,6 +360,7 @@ header {
         }
     }
 }
+
 .btn-submit:hover+.fa {
     right: 20px;
 }
@@ -372,9 +373,11 @@ header {
     transform: translateY(-50%);
 }
 
-form > div:first-of-type > input {
-    max-width:50%;
+.form-container form>div:first-of-type>input {
+    max-width: 50%;
 }
+
+
 /*======= form_input--container=========*/
 
 
@@ -477,21 +480,45 @@ form > div:first-of-type > input {
 
 
 /*======= section 4=========*/
-.section_4{
-    background:$white;
-    .container{
-        grid-template-columns: repeat(6,1fr);
+
+.section_4 {
+    background: $white;
+    font-family: $main-font;
+    .container {
+        grid-template-columns: repeat(6, 1fr);
         grid-gap: 1rem;
     }
 }
-.form_container{
+
+.form_container {
+    letter-spacing: -0.03rem;
     grid-area: 1/ span 2;
-    background: #000;
+    .form form {
+        outline: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        .input_container {
+            position: relative;
+            display: flex;
+            width: 100%;
+            &.fa {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
 }
-.map{
-    background:lightblue;
-    grid-area :1/span 4;
-    width:100%;
-    
+
+.map {
+    background: lightblue;
+    grid-area: 1/span 4;
+    width: 100%;
 }
+
+
 /*======= section 4=========*/
