@@ -138,7 +138,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\img\\herobg.jpeg":["b7a6ed50c210d83ac864aa7c3a7e57d3.jpeg",16],"_css_loader":15}],10:[function(require,module,exports) {
+},{"./..\\img\\herobg.jpeg":["b7a6ed50c210d83ac864aa7c3a7e57d3.jpeg",16],"_css_loader":15}],13:[function(require,module,exports) {
 "use strict";
 
 require("../css/app.scss");
@@ -167,7 +167,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':64673/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':55950/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -268,4 +268,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,10])
+},{}]},{},[0,13])
