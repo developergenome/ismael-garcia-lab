@@ -638,7 +638,7 @@ header {
   background: $white;
   font-family: $main-font;
   .container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 2rem;
     .card_subtitle {
       font-weight: 300;
@@ -651,7 +651,7 @@ header {
 
 .form_container {
   letter-spacing: -0.03rem;
-  grid-area: 1/ span 1;
+  grid-area: 1/ span 2;
   .form form {
     // outline: 1px solid red;
     display: -webkit-box;
@@ -697,10 +697,11 @@ header {
       position: relative;
       width: 100%;
       margin-bottom: 1rem;
-      &:first-of-type .fa {
+      .arrow-icon-btn {
         position: absolute;
         top: 50%;
-        right: 2rem;
+        color:#c6c6c6;
+        right: 1rem;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
       }
@@ -714,10 +715,23 @@ header {
         color: #c6c6c6;
       }
       button {
+        position:absolute;
+        right:0;
+        top:0;
+        bottom:0.02rem;
+        // height: 98%;
+        width:50px;
         background: #c6c6c6;
         padding: 1rem;
         border: 1px transparent;
         color: $white;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+
       }
     }
   }
@@ -730,4 +744,39 @@ header {
   min-height: 400px;
 }
 
-/*======= section 4=========*/
+/*======= section 5=========*/
+
+.section_5{
+  background: url('../img/womanCarGreen.jpeg');
+  background-size:cover;
+  background-position: 20% center;
+  .text{
+    font-family: $main-font;
+    color: $white;
+    .card_title{
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    }
+    p{
+      font-weight: 500;
+      margin-bottom: 4rem;
+    }
+    .btn_container{
+      max-width: 50%;
+      margin-bottom: 4rem;
+    }
+  }
+  .card_title,
+  .card_subtitle,p{
+    color:$white;
+  }
+ .text .card_subtitle{
+     padding: 0;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+ }
+}
+/*======= section 5=========*/

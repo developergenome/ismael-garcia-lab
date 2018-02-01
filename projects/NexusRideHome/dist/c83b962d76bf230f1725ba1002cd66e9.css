@@ -515,7 +515,7 @@ header {
   background: #fff;
   font-family: "Source Sans Pro", sans-serif; }
   .section_4 .container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 2rem; }
     .section_4 .container .card_subtitle {
       font-weight: 300; }
@@ -524,7 +524,7 @@ header {
 
 .form_container {
   letter-spacing: -0.03rem;
-  grid-area: 1/ span 1; }
+  grid-area: 1/ span 2; }
   .form_container .form form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -564,10 +564,11 @@ header {
       position: relative;
       width: 100%;
       margin-bottom: 1rem; }
-      .form_container .form form .input_container:first-of-type .fa {
+      .form_container .form form .input_container .arrow-icon-btn {
         position: absolute;
         top: 50%;
-        right: 2rem;
+        color: #c6c6c6;
+        right: 1rem;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%); }
       .form_container .form form .input_container input {
@@ -579,10 +580,21 @@ header {
         border-radius: 0.1rem;
         color: #c6c6c6; }
       .form_container .form form .input_container button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0.02rem;
+        width: 50px;
         background: #c6c6c6;
         padding: 1rem;
         border: 1px transparent;
-        color: #fff; }
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
 
 .map {
   background: lightblue;
@@ -590,4 +602,32 @@ header {
   width: 100%;
   min-height: 400px; }
 
-/*======= section 4=========*/
+/*======= section 5=========*/
+.section_5 {
+  background: url("ce9f02211a3eb0a9d13f82038e17a243.jpeg");
+  background-size: cover;
+  background-position: 20% center; }
+  .section_5 .text {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff; }
+    .section_5 .text .card_title {
+      font-weight: 500;
+      font-size: 2.5rem;
+      margin-bottom: 0; }
+    .section_5 .text p {
+      font-weight: 500;
+      margin-bottom: 4rem; }
+    .section_5 .text .btn_container {
+      max-width: 50%;
+      margin-bottom: 4rem; }
+  .section_5 .card_title,
+  .section_5 .card_subtitle, .section_5 p {
+    color: #fff; }
+  .section_5 .text .card_subtitle {
+    padding: 0;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem; }
+
+/*======= section 5=========*/
