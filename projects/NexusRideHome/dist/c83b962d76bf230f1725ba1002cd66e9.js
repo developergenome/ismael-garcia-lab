@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],15:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":18}],14:[function(require,module,exports) {
+},{"./bundle-url":18}],10:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\img\\herobg.jpeg":["b7a6ed50c210d83ac864aa7c3a7e57d3.jpeg",19],"./..\\img\\womanCarGreen.jpeg":["ce9f02211a3eb0a9d13f82038e17a243.jpeg",20],"./..\\img\\man.jpeg":["c622f477511bcce564c1caaceed817b1.jpeg",21],"./..\\img\\WomanNoCar.jpeg":["a72127b55f575e5fa1b15a48dfe38997.jpeg",7],"./..\\img\\womanDrive.jpeg":["b32c9d1eb1ad4f0ddadb03b3989326fc.jpeg",22],"./..\\img\\manNoCar.jpeg":["2bf4cd0b2e93b3770b00328d65744c98.jpeg",9],"_css_loader":15}],13:[function(require,module,exports) {
+},{"./..\\img\\herobg.jpeg":["b7a6ed50c210d83ac864aa7c3a7e57d3.jpeg",13],"./..\\img\\womanCarGreen.jpeg":["ce9f02211a3eb0a9d13f82038e17a243.jpeg",14],"./..\\img\\man.jpeg":["c622f477511bcce564c1caaceed817b1.jpeg",12],"./..\\img\\WomanNoCar.jpeg":["a72127b55f575e5fa1b15a48dfe38997.jpeg",15],"./..\\img\\womanDrive.jpeg":["b32c9d1eb1ad4f0ddadb03b3989326fc.jpeg",16],"./..\\img\\manNoCar.jpeg":["2bf4cd0b2e93b3770b00328d65744c98.jpeg",17],"_css_loader":11}],9:[function(require,module,exports) {
 "use strict";
 
 require("../css/app.scss");
@@ -149,7 +149,7 @@ function toggleNav() {
 }
 // toggle menu
 document.querySelector(".toggle").addEventListener("click", toggleNav);
-},{"../css/app.scss":14}],0:[function(require,module,exports) {
+},{"../css/app.scss":10}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -167,7 +167,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':54783/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':62648/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -268,4 +268,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,13])
+},{}]},{},[0,9])

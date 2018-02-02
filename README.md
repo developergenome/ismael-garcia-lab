@@ -3,6 +3,9 @@
 Welcome, Ismael! This is the Genetic Lab where all your experimentation will happen!
 Please create the following folders:
 
+## Nexus ride project live 
+http://nexusride.surge.sh/
+
 * developer-log
 * experiments
 * projects
