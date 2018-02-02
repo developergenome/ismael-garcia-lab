@@ -333,11 +333,11 @@ header {
   background: #f8f8f9;
   padding: 2rem;
   position: absolute;
-  top: -10rem;
+  top: -13rem;
   right: 7rem;
   bottom: -6rem; }
   .form-container .form_header {
-    margin-bottom: 2rem; }
+    margin-bottom: 1.5rem; }
     .form-container .form_header .form_header--title {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -621,7 +621,8 @@ header {
       max-width: 50%;
       margin-bottom: 4rem; }
   .section_5 .card_title,
-  .section_5 .card_subtitle, .section_5 p {
+  .section_5 .card_subtitle,
+  .section_5 p {
     color: #fff; }
   .section_5 .text .card_subtitle {
     padding: 0;
@@ -679,6 +680,7 @@ header {
 /*======= dots=========*/
 .carousel_dots {
   padding: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -693,4 +695,55 @@ header {
     background: inherit;
     transform: scale(1.5); }
 
-/*======= section 6=========*/
+/*======= section 7=========*/
+.section_7 {
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex; }
+  .section_7 .img_bg {
+    width: 45%;
+    background: url("06f556eeaa64d93bd4801f839cbf9792.jpeg");
+    background-position: 20% center;
+    background-size: cover; }
+  .section_7 .container {
+    min-width: 55%;
+    display: block;
+    padding: 4rem; }
+    .section_7 .container p {
+      font-weight: 300; }
+  .section_7 .content {
+    width: 80%;
+    margin: 0 auto; }
+  .section_7 .card_title {
+    font-weight: 400;
+    font-size: 2.8rem; }
+  .section_7 .btn_container {
+    max-width: 80%;
+    width: 40%;
+    color: #377037; }
+    .section_7 .btn_container .btn,
+    .section_7 .btn_container .fa {
+      background: inherit;
+      color: #377037; }
+
+/*======= section 8=========*/
+.section_8 {
+  background: #f8f8f9; }
+  .section_8 .container div {
+    font-family: "Source Sans Pro", sans-serif; }
+    .section_8 .container div .card_title,
+    .section_8 .container div .card_subtitle {
+      margin: 0;
+      font-weight: 300; }
+    .section_8 .container div .card_title {
+      font-size: 2.8rem; }
+    .section_8 .container div input {
+      outline: transparent 1px solid;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      color: #717171;
+      font-size: 1rem; }
+    .section_8 .container div button {
+      border: none;
+      margin: 0; }
+
+/*======= section 8=========*/
