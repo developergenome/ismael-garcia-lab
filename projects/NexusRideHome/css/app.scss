@@ -80,19 +80,6 @@ header {
         -ms-flex-align: center;
         align-items: center;
     }
-    .logo {
-        -webkit-box-flex: 2;
-        -ms-flex: 2;
-        flex: 2;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.5rem;
-        padding: 0.5rem 0;
-        font-weight: 500;
-        letter-spacing: 3px;
-        line-height: 150%;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
     .menu {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -129,6 +116,19 @@ header {
     }
 }
 
+.logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-family: $main-font, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 150%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 //toggle menu styles
 .toggle {
     margin-left: 20px;
@@ -924,6 +924,7 @@ header {
             padding: 0.8rem 1.5rem;
             color: $light-dark;
             font-size: 1rem;
+            min-width: 80%;
         }
         button {
             border: none;
@@ -932,4 +933,64 @@ header {
     }
 }
 
-/*======= section 8=========*/
+/*======= footer =========*/
+footer{
+    background: #000;
+    .img{
+        background: #fff;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cta_container{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $light-dark;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        .logo{
+            flex: 0;
+            min-width: 20%;
+            color: $white;
+        }
+        .btn_sign{
+            background: $white;
+            color: $light-dark;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .btn_driver{
+            background: #000;
+            border: 2px solid $white;
+            font-size: 1rem;
+            transition: background 0.5s ease-in-out;
+            &:hover{
+                background: $white;
+                color: #000;
+            }
+        }
+    }
+}
+ul{
+    list-style: none;
+}
+.footer_menu{
+    display: flex;
+    justify-content: space-between;
+    font-family: $main-font;
+    a{
+        color: $white;
+        font-weight: 300;
+        padding-bottom: 1rem;
+        display:inline-block;
+    }
+    .menu_help,.one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+}
