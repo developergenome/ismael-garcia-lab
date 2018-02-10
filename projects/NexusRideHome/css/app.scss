@@ -973,6 +973,9 @@ footer{
             color: $light-dark;
             font-weight: bold;
             font-size: 1rem;
+            &:hover{
+                background: rgba(#fff, 0.3);
+            }
         }
         .btn_driver{
             background: #000;
@@ -982,6 +985,7 @@ footer{
             &:hover{
                 background: $white;
                 color: #000;
+
             }
         }
     }

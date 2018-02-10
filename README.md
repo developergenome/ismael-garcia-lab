@@ -5,7 +5,8 @@ Please create the following folders:
 
 ## Nexus ride project live 
 http://nexusride.surge.sh/
-
+final css now js time 
+http://leamsigc.surge.sh/
 * developer-log
 * experiments
 * projects

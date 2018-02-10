@@ -784,6 +784,8 @@ footer {
       color: #717171;
       font-weight: bold;
       font-size: 1rem; }
+      footer .cta_container .btn_sign:hover {
+        background: rgba(255, 255, 255, 0.3); }
     footer .cta_container .btn_driver {
       background: #000;
       border: 2px solid #fff;
