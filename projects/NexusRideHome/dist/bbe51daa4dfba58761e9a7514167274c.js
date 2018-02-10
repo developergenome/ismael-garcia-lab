@@ -138,7 +138,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../img/herobg.jpeg":[["f93f7c93199fc9f7b116e2825879d397.jpeg",12],12],"./../img/womanCarGreen.jpeg":[["1bfe89b667bdb77a37469bf85e23254e.jpeg",16],16],"./../img/man.jpeg":[["7d2d55f133c348c8c2ef8109c4a5a900.jpeg",13],13],"./../img/WomanNoCar.jpeg":[["5a0664e90b2c3674c923f45941fda0bb.jpeg",14],14],"./../img/womanDrive.jpeg":[["5ff5e6f567c5b08da29d4a7dbcf27ba5.jpeg",15],15],"./../img/manNoCar.jpeg":[["df170bd70b3ce1d3f57efbf430092543.jpeg",17],17],"./../img/womanWaitCar.jpeg":[["ba2b49d5f1baf204f2870f7081e55cd4.jpeg",18],18],"_css_loader":11}],9:[function(require,module,exports) {
+},{"./../img/herobg.jpeg":[["f93f7c93199fc9f7b116e2825879d397.jpeg",12],12],"./../img/womanCarGreen.jpeg":[["1bfe89b667bdb77a37469bf85e23254e.jpeg",16],16],"./../img/man.jpeg":[["7d2d55f133c348c8c2ef8109c4a5a900.jpeg",13],13],"./../img/WomanNoCar.jpeg":[["5a0664e90b2c3674c923f45941fda0bb.jpeg",15],15],"./../img/womanDrive.jpeg":[["5ff5e6f567c5b08da29d4a7dbcf27ba5.jpeg",18],18],"./../img/manNoCar.jpeg":[["df170bd70b3ce1d3f57efbf430092543.jpeg",14],14],"./../img/womanWaitCar.jpeg":[["ba2b49d5f1baf204f2870f7081e55cd4.jpeg",17],17],"_css_loader":11}],8:[function(require,module,exports) {
 "use strict";
 
 require("../css/app.scss");
@@ -149,7 +149,7 @@ function toggleNav() {
 }
 // toggle menu
 document.querySelector(".toggle").addEventListener("click", toggleNav);
-},{"../css/app.scss":10}],88:[function(require,module,exports) {
+},{"../css/app.scss":10}],70:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -169,7 +169,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '38503' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '33363' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -270,5 +270,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[88,9])
+},{}]},{},[70,8])
 //# sourceMappingURL=/dist/bbe51daa4dfba58761e9a7514167274c.map

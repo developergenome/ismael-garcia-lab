@@ -287,6 +287,7 @@ header {
   text-transform: uppercase;
   padding: 0.8rem;
   font-size: 0.7rem;
+  font-weight: bold;
   display: inline-block; }
   .btn:hover {
     color: #fff;
@@ -469,7 +470,7 @@ header {
     width: 100%;
     text-align: center;
     font-size: 1.1rem;
-    font-weight: 300; }
+    font-weight: bold; }
 
 /*======= section 3=========*/
 .section_3 {
@@ -505,7 +506,6 @@ header {
       max-width: 13rem; }
       .container .section_3--card .btn_container .btn-submit {
         text-align: left;
-        font-weight: normal;
         color: #377037;
         background: inherit; }
       .container .section_3--card .btn_container .fa {
@@ -749,21 +749,32 @@ header {
       margin: 0; }
 
 /*======= footer =========*/
+.cta_container,
+.footer_menu,
+.tops,
+.get_app {
+  border-bottom: 1px solid #717171;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem; }
+
 footer {
   background: #000; }
   footer .img {
     background: #fff; }
   footer .container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-bottom: 0; }
+    footer .container a {
+      color: #fff;
+      font-weight: 300;
+      padding-bottom: 1rem;
+      display: inline-block; }
   footer .cta_container {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #717171;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem; }
+    align-items: center; }
     footer .cta_container .logo {
       flex: 0;
       min-width: 20%;
@@ -789,12 +800,52 @@ ul {
   display: flex;
   justify-content: space-between;
   font-family: "Source Sans Pro", sans-serif; }
-  .footer_menu a {
-    color: #fff;
-    font-weight: 300;
-    padding-bottom: 1rem;
-    display: inline-block; }
   .footer_menu .menu_help, .footer_menu .one {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: #fff; }
+  .footer_menu .menu_social {
+    display: flex;
+    justify-content: space-around; }
+
+.tops {
+  display: flex;
+  flex-direction: column;
+  color: #fff; }
+  .tops a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem; }
+  .tops div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .tops div ul {
+      flex-basis: 60%;
+      display: flex;
+      justify-content: flex-start; }
+
+.get_app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0; }
+  .get_app a {
+    display: block;
+    width: 10%; }
+  .get_app img {
+    width: 100%; }
+
+.rights {
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 0.8rem; }
+  .rights div {
+    display: flex;
+    flex-direction: column; }
