@@ -149,7 +149,7 @@ function toggleNav() {
 }
 // toggle menu
 document.querySelector(".toggle").addEventListener("click", toggleNav);
-},{"../css/app.scss":10}],71:[function(require,module,exports) {
+},{"../css/app.scss":10}],72:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -270,5 +270,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[71,8])
+},{}]},{},[72,8])
 //# sourceMappingURL=/dist/bbe51daa4dfba58761e9a7514167274c.map

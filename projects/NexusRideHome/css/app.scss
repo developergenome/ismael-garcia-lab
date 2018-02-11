@@ -358,7 +358,6 @@ header {
     text-transform: uppercase;
     padding: 0.8rem;
     font-size: 0.7rem;
-    font-weight: bold;
     display: inline-block;
     &:hover {
         color: $white;
@@ -579,7 +578,7 @@ header {
         width: 100%;
         text-align: center;
         font-size: 1.1rem;
-        font-weight: bold;
+        font-weight: 300;
     }
 }
 
@@ -623,6 +622,7 @@ header {
             max-width: 13rem;
             .btn-submit {
                 text-align: left;
+                font-weight: normal;
                 color: $btn-bg;
                 background: inherit;
             }
@@ -950,13 +950,6 @@ footer{
     .container{
         display: flex;
         flex-direction: column;
-        padding-bottom: 0;
-        a{
-            color: $white;
-            font-weight: 300;
-            padding-bottom: 1rem;
-            display:inline-block;
-        }
     }
     .cta_container{
         display: flex;
@@ -973,9 +966,6 @@ footer{
             color: $light-dark;
             font-weight: bold;
             font-size: 1rem;
-            &:hover{
-                background: rgba(#fff, 0.3);
-            }
         }
         .btn_driver{
             background: #000;
@@ -985,7 +975,6 @@ footer{
             &:hover{
                 background: $white;
                 color: #000;
-
             }
         }
     }
@@ -997,62 +986,15 @@ ul{
     display: flex;
     justify-content: space-between;
     font-family: $main-font;
+    a{
+        color: $white;
+        font-weight: 300;
+        padding-bottom: 1rem;
+        display:inline-block;
+    }
     .menu_help,.one{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        color: $white;
-    }
-    .menu_social{
-        display: flex;
-        justify-content: space-around;
-    }
-}
-.tops{
-    display:flex;
-    flex-direction: column;
-    color: $white;
-    a{
-        display: inline-block;
-        padding: 0.5rem 1rem ;
-        font-size: 0.8rem;
-    }
-    div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        ul{
-            flex-basis: 60%;
-            display:flex;
-            justify-content: flex-start;
-        }
-    }
-
-}
-.get_app{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    margin-bottom: 0;
-    a{
-        display: block;
-        width: 10%;
-    }
-    img{
-        width: 100%;
-    }
-}
-.rights{
-    font-family: $main-font;
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    font-size: 0.8rem;
-    div{
-        display: flex;
-        flex-direction:column;
     }
 }
