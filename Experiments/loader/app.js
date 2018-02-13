@@ -10,7 +10,5 @@ window.addEventListener('load', () => {
   input.addEventListener('change', _ => {
     //set the var value
     document.documentElement.style.setProperty('--main-bg',_.target.value);
-
-
   });
 } );
