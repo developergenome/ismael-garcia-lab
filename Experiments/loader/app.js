@@ -1,4 +1,4 @@
-// windo load
+// window  load
 window.addEventListener('load', () => {
   const input = document.querySelector('.input');
   //input change value
