@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^7.2.5",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "postcss-modules": "^1.1.0"
   }
 }
