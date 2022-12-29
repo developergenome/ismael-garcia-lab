@@ -11,6 +11,6 @@
   "dependencies": {
     "autoprefixer": "^7.2.5",
     "node-sass": "^4.7.2",
-    "postcss-modules": "^1.1.0"
+    "postcss-modules": "^6.0.0"
   }
 }
